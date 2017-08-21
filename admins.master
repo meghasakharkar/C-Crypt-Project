@@ -1,0 +1,56 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admins.master.cs" Inherits="admins" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+   <div style="position: absolute; left: 251px; top: 0px; width: 100%; height: 150px; background-color: #a90716)">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <table style="width: 100%">
+                    <tr>
+                        <td>
+                            <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/banner_admin.jpg" /></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: center">
+                            <asp:Label ID="LblSession" runat="server" Font-Names="Calibri" Font-Size="Large"></asp:Label></td>
+                    </tr>
+                </table>
+                <hr style="border: none; height: 1px; background-color: #ff006e" />
+            </asp:ContentPlaceHolder>
+        </div>
+        <div style="position: absolute; left: 0px; top: 0px; width: 250px; height: 800px">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                <table style="width: 100%">
+                    <tr>
+                        <td style="text-align: center">
+                            <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/admin.png" /></td>
+                    </tr>
+                </table>
+                <br />
+                <hr style="border: none; height: 1px; background-color: #ff006e" />
+                <table style="width: 100%; text-align: center">
+                    <tr>
+                        <td>
+                            <asp:Button ID="BtnRegUsers" runat="server" Text="View Registered Users" CausesValidation="False" Font-Names="Calibri" Font-Size="Large" Height="40px" Width="240px" OnClick="BtnRegUsers_Click" /></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <asp:Button ID="BtnLogout" runat="server" Text="Logout" CausesValidation="False" Font-Names="Calibri" Font-Size="Large" Height="40px" Width="240px" OnClick="BtnLogout_Click" /></td>
+                    </tr>
+                </table>
+                <hr style="border: none; height: 1px; background-color: #ff006e" />
+            </asp:ContentPlaceHolder>
+        </div>
+        <div style="position: absolute; left: 251px; top: 151px; width: 100%; height: 800px">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

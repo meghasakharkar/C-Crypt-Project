@@ -1,0 +1,28 @@
+
+
+create database ccdb;
+
+use ccdb;
+
+create table regusers
+(
+	fullname varchar(100),
+	contactno varchar(20),
+	gender varchar(30),
+	emailid varchar(50) primary key,
+	upassword varchar(30),
+	securityque varchar(100),
+	answer varchar(50)
+);
+
+ create table filecloud
+(
+	srno int(4) primary key auto_increment,
+	emailid varchar(100),
+	filedescription varchar(300),
+	filename varchar(200),
+	savedate varchar(100),
+	savetime varchar(100),
+	accesskey varchar(100)
+);
+
